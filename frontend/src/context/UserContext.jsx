@@ -4,7 +4,7 @@ import React, { createContext, useState, useEffect } from 'react';
 export const UserDataContext = createContext();
 
 const UserContext = ({ children }) => {
-  const serverUrl = 'http://localhost:8000';
+  const serverUrl = 'https://virtual-assistant-backend-ocg1.onrender.com';
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem("userData");
     return saved ? JSON.parse(saved) : null;
